@@ -21,6 +21,18 @@ Currently OrthoGrafter can be run using Rscript with R.
   2. InterProScan 
   3. Pre-computed TreeGrafter Placements https://www.ebi.ac.uk/interpro/download/ (download match complete.xml file, warning : Large!)
 2. R is required
-
-3. The set of PANTHER 17 trees from https://data.pantherdb.org/ftp/downloads/TreeGrafter/ (PANTHER17.0_data.tar.gz) - only the .tree files are used by OrthoGrafter if one wants to save space
+  3. Required Libraries : Ape, stringr 
 4. 
+
+5. The set of PANTHER 17 trees from https://data.pantherdb.org/ftp/downloads/TreeGrafter/ (PANTHER17.0_data.tar.gz) - only the .tree files are used by OrthoGrafter if one wants to save space
+6. 
+
+
+# Running OrthoGrafter - 
+
+ Rscript UpdateGraftPoint.r treeGraftoutput2.txt specieslist[.csv|.tsv] [saveFolder|savelist.out|savelist.txt]
+
+## Input Formats : 
+The required inputs include sample name, grafted tree (PTHR#####), grafted node (AN##), and sample species. 
+
+##
