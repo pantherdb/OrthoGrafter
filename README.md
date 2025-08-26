@@ -1,4 +1,4 @@
-Please check back on the 26th of Aug
+25th of Aug - Fixing some issues with getting it to work on github, check back in a couple days after it's fixed.  
 
 
 
