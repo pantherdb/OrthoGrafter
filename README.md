@@ -1,7 +1,4 @@
-25th of Aug - Fixing some issues with getting it to work on github, check back in a couple days after it's fixed.  
-
-
-
+Sept 1st - Basic usage should work on github now now  
 
 # OrthoGrafter
 
@@ -9,23 +6,15 @@ OrthoGrafter is an algorithm designed to determine the set of orthologs when pro
 
 Currently OrthoGrafter can be run using Rscript with R. 
 
-
-# Data
-
-
-
 # Requirements 
 
 1. Initial graft points must be provided for OrthoGrafter to update and determine orthologs, these graft points can be obtained from :
-  1. TreeGrafter https://github.com/pantherdb/TreeGrafter
-  2. InterProScan 
-  3. Pre-computed TreeGrafter Placements https://www.ebi.ac.uk/interpro/download/ (download match complete.xml file, warning : Large!)
+  - TreeGrafter https://github.com/pantherdb/TreeGrafter
+  -  InterProScan
+  -  Pre-computed TreeGrafter Placements https://www.ebi.ac.uk/interpro/download/ (download match complete.xml file, warning : Large!)
 2. R is required
-  3. Required Libraries : Ape, stringr 
-4. 
-
-5. The set of PANTHER 17 trees from https://data.pantherdb.org/ftp/downloads/TreeGrafter/ (PANTHER17.0_data.tar.gz) - only the .tree files are used by OrthoGrafter if one wants to save space
-6. 
+  - Required Libraries : Ape, stringr 
+3. The set of PANTHER 17 trees from https://data.pantherdb.org/ftp/downloads/TreeGrafter/ (PANTHER17.0_data.tar.gz) - only the .tree files are used by OrthoGrafter if one wants to save space. These trees are also contained in this repo in the treeFiles.7z file, this can be unzipped into the treeFiles folder in the main directory.  
 
 
 # Running OrthoGrafter - 
@@ -35,4 +24,12 @@ Currently OrthoGrafter can be run using Rscript with R.
 ## Input Formats : 
 The required inputs include sample name, grafted tree (PTHR#####), grafted node (AN##), and sample species. 
 
-##
+
+## Sample Run
+
+A sample run can be done by using the files in the sample folder. From the rCode folder run the command  Rscript updateGrafts.r ../sampleInput/sampleGrafts.csv ../sampleInput/sampleGraftsSpecies.csv [outputFileName] 
+
+Output files are placed in the output folder. Expected outputs for sample set are in file sampleOutput.out 
+
+Current output will list only changed ortholog sets 
+
