@@ -1,4 +1,4 @@
-Sept 1st - Basic usage should work on github now now  
+Sept 1st - Basic usage should work on github now. Additional function details to be updated shortly. 
 
 # OrthoGrafter
 
@@ -27,9 +27,18 @@ The required inputs include sample name, grafted tree (PTHR#####), grafted node 
 
 ## Sample Run
 
-A sample run can be done by using the files in the sample folder. From the rCode folder run the command  Rscript updateGrafts.r ../sampleInput/sampleGrafts.csv ../sampleInput/sampleGraftsSpecies.csv [outputFileName] 
+A sample run can be done by using the files in the sample folder. From the rCode folder run the command  Rscript updateGrafts.r 
+  - ../sampleInput/sampleGrafts.csv ../sampleInput/sampleGraftsSpecies.csv [outputFileName] 
 
 Output files are placed in the output folder. Expected outputs for sample set are in file sampleOutput.out 
 
 Current output will list only changed ortholog sets 
 
+
+# OrthoGrafter Options
+
+## Block File Usage
+
+The block file gives a list of clades in the PANTHER trees which OrthoGrafter will not move a graft point above. By default these are the domains (Archea, Bacteria and Eukaryota). This constraint is designed to prevent long range moves which could potentially be due to issues such as horizontal transfers (which may occur along a branch leading to an input but not in the PANTHER tree itself). 
+
+The specific blocks used could depend upon where an input species diverged from it's closest relative in the PANTHER trees. In most cases altering this should not be necessary but the option is included for those interested. 
