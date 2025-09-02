@@ -19,7 +19,7 @@ Currently OrthoGrafter can be run using Rscript with R.
 
 # Running OrthoGrafter - 
 
- Rscript UpdateGraftPoint.r treeGraftoutput2.txt specieslist[.csv|.tsv] [saveFolder|savelist.out|savelist.txt]
+ Rscript UpdateGraftPoint.r treeGraftoutput2.txt specieslist[.csv|.tsv] [saveFileName]
 
 ## Input Formats : 
 The required inputs include sample name, grafted tree (PTHR#####), grafted node (AN##), and sample species. 
