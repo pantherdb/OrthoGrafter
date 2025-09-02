@@ -33,8 +33,6 @@ A sample run can be done by using the files in the sample folder. From the rCode
 
 Output files are placed in the output folder. Expected outputs for sample set are in file sampleOutput.out 
 
-Current output will list only changed ortholog sets 
-
 
 # OrthoGrafter Options
 
@@ -43,3 +41,22 @@ Current output will list only changed ortholog sets
 The block file gives a list of clades in the PANTHER trees which OrthoGrafter will not move a graft point above. By default these are the domains (Archea, Bacteria and Eukaryota). This constraint is designed to prevent long range moves which could potentially be due to issues such as horizontal transfers (which may occur along a branch leading to an input but not in the PANTHER tree itself). 
 
 The specific blocks used could depend upon where an input species diverged from it's closest relative in the PANTHER trees. In most cases altering this should not be necessary but the option is included for those interested. 
+
+## List of Outputs : 
+Not all are listed here : 
+- SampleName
+- inputSpecies - species that was input for given sample
+- pthr - graft PANTHER tree for given sample
+- an - original graft position in PANTHER tree
+- newAN - updated AN graft position
+- newGraft - internal PANTHER tree graft position (when looking up node positions in tree itself)
+- distFloat - Total edge distance between original and new graft position
+- distBranches - Total number of nodes/branches traversed between original and new graft positions
+- uniprotList - Orthologs listed as their Uniprot IDs
+
+## List of Input Parameters 
+- -x include xenologs in output
+- -p include paralogs in output
+- -xp or -px include both xenologs and paralogs
+- -nb disable block list
+- -b BlockFileName lets you input an updated blockfile
