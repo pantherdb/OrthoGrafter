@@ -27,8 +27,9 @@ The required inputs include sample name, grafted tree (PTHR#####), grafted node 
 
 ## Sample Run
 
-A sample run can be done by using the files in the sample folder. From the rCode folder run the command  Rscript updateGrafts.r 
-  - ../sampleInput/sampleGrafts.csv ../sampleInput/sampleGraftsSpecies.csv [outputFileName] 
+A sample run can be done by using the files in the sample folder. From the rCode folder run the command  
+
+  - Rscript updateGrafts.r ../sampleInput/sampleGrafts.csv ../sampleInput/sampleGraftsSpecies.csv [outputFileName] 
 
 Output files are placed in the output folder. Expected outputs for sample set are in file sampleOutput.out 
 
