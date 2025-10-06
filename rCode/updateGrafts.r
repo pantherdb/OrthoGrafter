@@ -246,8 +246,8 @@ for(i in 1:length(unqspec)){
     }
 }
 
-intAncestors = readRDS('../data/internalAncestorsToParent.rds')
-cp = read.csv('../data/childparent2025.csv')[-1]
+intAncestors = readRDS('../Data/internalAncestorsToParent.rds')
+cp = read.csv('../Data/childparent2025.csv')[-1]
 
 fullpnames = list()
 for(i in 1:length(unqspec)){
