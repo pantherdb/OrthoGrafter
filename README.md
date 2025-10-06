@@ -14,7 +14,7 @@ Currently OrthoGrafter can be run using Rscript with R.
   -  Pre-computed TreeGrafter Placements https://www.ebi.ac.uk/interpro/download/ (download match complete.xml file, warning : Large!)
 2. R is required
   - Required Libraries : Ape, stringr 
-3. The set of PANTHER 17 trees from https://data.pantherdb.org/ftp/downloads/TreeGrafter/ (PANTHER17.0_data.tar.gz) - only the .tree files are used by OrthoGrafter if one wants to save space. These trees are also contained in this repo in the treeFiles.7z file, this can be unzipped into the treeFiles folder in the main directory.  
+3. The set of PANTHER 17 trees from https://data.pantherdb.org/ftp/downloads/TreeGrafter/ (PANTHER17.0_data.tar.gz) - only the .tree files are used by OrthoGrafter if one wants to save space. These trees are also contained in this repo in the treeFiles.7z file, this can be unzipped into the treeFiles folder in the main directory.  These trees are in a modified Newick format with extended information in the NHX format. 
 
 
 # Running OrthoGrafter - 
